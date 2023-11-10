@@ -6,6 +6,11 @@ h5, p {
     font-family: 'Inconsolata', monospace;
 }
 
+/* removes underline from all website links */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
 .jumbotron {
     background-image: url(./images/banner.png);
     background-size: cover;
@@ -19,4 +24,16 @@ h5, p {
 
 .nav-link:hover {
     color: red;
+}
+
+.hvr, .hvr-nav {
+    transition: all 0.3s;
+}
+
+.hvr:hover {
+    transform: scale(1.02);
+}
+
+.hvr-nav:hover {
+    transform: scale(1.3);
 }
