@@ -37,3 +37,38 @@ a:link, a:visited, a:hover, a:active {
 .hvr-nav:hover {
     transform: scale(1.3);
 }
+
+.card-home {
+    color: red;
+}
+
+.mbl-nav-icon {
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #desktop-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 4000px) {
+    #mobile-nav {
+        display: none;
+    }
+}

@@ -40,30 +40,73 @@
               </div>
             </nav>
           </div>
+          <div id="mobile-nav" class="container">
+            <nav class="navbar">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid text-center" src="./images/ttp_logo.png" alt="The Turning Point Logo"></a>
+                <div class="mbl-nav-icon">
+                  <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+          </div>
     </header>
     <main role="main">
         <div class="container">
           <div class="card mb-3 text-bg-dark bg-opacity-10 border-light">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="./images/banner-4.jpeg" class="img-fluid rounded-start h-100" alt="...">
+                <img src="./images/banner-4.jpeg" class="img-fluid rounded-start h-100 w-100" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title display-2 text-center mt-lg-5">Welcome to Ottawa’s BEST used Music & Movie store!</h5>
+                  <h5 class="card-title display-2 text-center mt-lg-5 mb-sm-5">Welcome to Ottawa’s BEST used Music & Movie store!</h5>
                   <p class="card-text display-5 text-center mt-lg-5">The biggest and most diverse selection of music and movies in Ottawa since 1983.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex align-items-stretch">
               <a href="">
                 <div class="card hvr text-bg-dark bg-opacity-10 border-light">
                   <img src="./images/records.png" class="card-img-top rounded-start" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title card-home display-5 text-center">RECORDS</h5>
+                    <p class="card-text fs-3 text-center">Classics, Contemporary and Collectibles</p>
                   </div>
                 </div>
               </a>
@@ -73,8 +116,8 @@
                 <div class="card hvr text-bg-dark bg-opacity-10 border-light">
                   <img src="./images/cds.png" class="card-img-top rounded-start" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title card-home display-5 text-center">CDS</h5>
+                    <p class="card-text fs-3 text-center">Imports, Box Sets, New Releases</p>
                   </div>
                 </div>
               </a>
@@ -82,16 +125,16 @@
             <div class="col-md-4">
               <a href="">
                 <div class="card hvr text-bg-dark bg-opacity-10 border-light">
-                  <img src="./images/records.png" class="card-img-top rounded-start" alt="...">
+                  <img src="./images/dvds.png" class="card-img-top rounded-start" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title fs-1 text-center">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title card-home display-5 text-center">DVDS</h5>
+                    <p class="card-text fs-3 text-center">TV Series, Documentaries, and Fan-Favourites</p>
                   </div>
                 </div>
               </a>
             </div>
+          </div>
             <!-- Buy, Sell, Trade -->
-            <div class="container">
               <a href="./buy-sell-trade.html">
                 <div class="card hvr mb-3 text-bg-dark bg-opacity-10 border-light mt-3">
                   <div class="row g-0">
@@ -103,14 +146,12 @@
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <img src="./images/records-2.jpeg" class="img-fluid rounded-start opacity-50 h-100" alt="...">
+                      <img src="./images/records-2.jpeg" class="img-fluid rounded-start opacity-50 h-100 w-100" alt="...">
                     </div>
                   </div>
                 </div>
               </a>
-            </div>
           </div>
-        </div>
     </main>
     <footer>
       <div class="container text-center mt-2 mb-3">
