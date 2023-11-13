@@ -2,7 +2,7 @@ body {
     background-color: #030301;
 }
 
-h5, p {
+h1, h2, h5, p {
     font-family: 'Inconsolata', monospace;
 }
 
@@ -12,9 +12,25 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .jumbotron {
-    background-image: url(./images/banner.png);
+    background-image: url(./images/banner-ttp.jpeg);
     background-size: cover;
-    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
+.records {
+    background-image: url(./images/records.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.cds {
+    background-image: url(./images/cds.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
 }
 
 .nav-link {
@@ -53,11 +69,19 @@ a:link, a:visited, a:hover, a:active {
     #desktop-nav {
         display: none;
     }
+
+    .jumbotron {
+        padding: 0rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #desktop-nav {
         display: none;
+    }
+
+    .jumbotron {
+        padding: 0rem;
     }
 }
 
