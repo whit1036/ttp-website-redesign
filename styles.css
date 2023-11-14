@@ -27,6 +27,30 @@ a:link, a:visited, a:hover, a:active {
     padding: 10rem;
 }
 
+.buy-sell-trade-banner {
+    background-image: url(./images/buy-sell-trade-banner-img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
+.buy-sell-trade-banner-2 {
+    background-image: url(./images/buy-sell-trade-banner-img-2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
+.buy-sell-trade-banner-3 {
+    background-image: url(./images/buy-sell-trade-banner-img-3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
 .records-banner {
     background-image: url(./images/records-product-banner-img.jpeg);
     background-size: cover;
@@ -80,7 +104,7 @@ a:link, a:visited, a:hover, a:active {
     background-position: 0px;
 }
 
-.nav-link, h6 {
+.nav-link, h6, h3 {
     color: red;
     font-family: 'Unica One', sans-serif;
 }
@@ -125,6 +149,18 @@ a:link, a:visited, a:hover, a:active {
         padding: 0rem;
     }
 
+    .buy-sell-trade-banner {
+        padding: 0rem;
+    }
+
+    .buy-sell-trade-banner-2 {
+        padding: 0rem;
+    }
+
+    .buy-sell-trade-banner-3 {
+        padding: 0rem;
+    }
+
     .cds-banner {
         padding: 0rem;
     }
@@ -152,6 +188,18 @@ a:link, a:visited, a:hover, a:active {
     }
 
     .buy-sell-trade {
+        padding: 0rem;
+    }
+
+    .buy-sell-trade-banner {
+        padding: 0rem;
+    }
+
+    .buy-sell-trade-banner-2 {
+        padding: 0rem;
+    }
+
+    .buy-sell-trade-banner-3 {
         padding: 0rem;
     }
 
