@@ -17,6 +17,7 @@
 </head>
 <body>
     <header>
+        <!-- Desktop Navigation -->
         <div id="desktop-nav" class="container">
           <a href="index.html"><img class="img-fluid mt-3" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
             <nav class="navbar navbar-expand-lg mt-4">
@@ -40,6 +41,7 @@
               </div>
             </nav>
           </div>
+          <!-- Mobile Navigation -->
           <div id="mobile-nav" class="container">
             <nav class="navbar">
                 <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
@@ -86,101 +88,60 @@
     </header>
     <main role="main"> 
         <div class="container">
+          <!-- Jumbotron (Homepage) -->
           <div class="mb-4 mt-3 bg-light rounded-3 jumbotron">
             <div class="container-fluid py-5">
               <h1 class="col-md-12 display-6 fw-bold text-light text-center">Ottawa’s BEST used Music & Movie store!</h1>
               <p class="col-md-12 fs-3 text-light text-center">The most diverse selection of music and movies in Ottawa since 1983.</p>
             </div>
           </div>
-          <div class="row align-items-md-stretch">
+          <!-- Records, CDs, DVDs -->
+          <div class="row align-items-md-stretch prods">
+            <!-- Records -->
             <div class="col-lg-4">
-              <div class="h-100 p-5 text-white rounded-3 records hvr">
-                <h2 class="display-6 card-home">RECORDS</h2>
-                <p class="fs-4">Classics, Contemporary and Collectibles</p>
-                <button class="btn btn-outline-light" type="button">Example button</button>
-              </div>
+              <a href="./products.html">
+                <div class="h-100 p-5 text-white rounded-3 records hvr">
+                  <h2 class="display-6 card-home">RECORDS</h2>
+                  <p class="fs-4">Classics, Contemporary and Collectibles</p>
+                  <button class="btn btn-outline-light" type="button">Learn More!</button>
+                </div>
+              </a>
             </div>
+            <!-- CDs -->
             <div class="col-lg-4">
-              <div class="h-100 p-5 text-white rounded-3 cds hvr">
-                <h2 class="display-6 card-home">CDS</h2>
-                <p class="fs-4">Imports, Box Sets and New Releases</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-              </div>
+              <a href="./products.html">
+                <div class="h-100 p-5 text-white rounded-3 cds hvr">
+                  <h2 class="display-6 card-home">CDS</h2>
+                  <p class="fs-4">Imports, Box Sets and New Releases</p>
+                  <button class="btn btn-outline-light" type="button">Learn More!</button>
+                </div>
+              </a>
             </div>
+            <!-- DVDs -->
             <div class="col-lg-4">
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Add borders</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button>
-              </div>
+              <a href="./products.html">
+                <div class="h-100 p-5 text-light rounded-3 dvds hvr">
+                  <h2 class="card-home display-6">DVDS</h2>
+                  <p class="fs-4">TV Series, Documentaries, and fan-favourites</p>
+                  <button class="btn btn-outline-light" type="button">Learn More!</button>
+                </div>
+              </a>
             </div>
           </div>
-          <!-- <div class="card mb-3 text-bg-dark bg-opacity-10 border-light mt-3 mt-lg-0">
-            <div class="row g-0 welcome-container">
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title display-2 text-center mt-md-5 mb-sm-5">Welcome to Ottawa’s BEST used Music & Movie store!</h5>
-                  <p class="card-text display-5 text-center mt-lg-5">The biggest and most diverse selection of music and movies in Ottawa since 1983.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <img src="./images/banner-4.jpeg" class="img-fluid rounded-start w-100 h-100" alt="...">
+          <!-- Buy, Sell, Trade -->
+          <a href="./buy-sell-trade.html">
+            <div class="mb-4 mt-3 bg-light rounded-3 buy-sell-trade hvr">
+              <div class="container-fluid py-5">
+                <h1 class="col-md-12 display-6 fw-bold text-light text-center">BUY, SELL, TRADE</h1>
+                <p class="col-md-12 fs-3 text-light text-center">Bring us your CDs, LPs, DVDs and Blu-Rays!</p>
+                <p class="col-md-12 fs-3 text-light text-center">At The Turning Point, you can bring in your old stuff and get cash, or 25% more in a store credit you can use to shop whenever you want.</p>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="row">
-            <div class="col-md-4">
-              <a href="">
-                <div class="card hvr text-bg-dark bg-opacity-10 border-light">
-                  <img src="./images/records.png" class="card-img-top rounded-start" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title card-home display-5 text-center">RECORDS</h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="">
-                <div class="card hvr text-bg-dark bg-opacity-10 border-light">
-                  <img src="./images/cds.png" class="card-img-top rounded-start" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title card-home display-5 text-center">CDS</h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="">
-                <div class="card hvr text-bg-dark bg-opacity-10 border-light">
-                  <img src="./images/dvds.png" class="card-img-top rounded-start" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title card-home display-5 text-center">DVDS</h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div> -->
-            <!-- Buy, Sell, Trade -->
-              <a href="./buy-sell-trade.html">
-                <div class="card hvr mb-3 text-bg-dark bg-opacity-10 border-light mt-3">
-                  <div class="row g-0">
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title display-2 text-center mt-lg-5">Buy, Sell, Trade</h5>
-                        <p class="card-text display-5 text-center mt-lg-5">Bring us your CDs, LPs, DVDs and Blu-Rays!</p>
-                        <p class="card-text display-6 text-center mt-lg-5">At The Turning Point, you can bring in your old stuff and get cash, or 25% more in a store credit you can use to shop whenever you want.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <img src="./images/records-2.jpeg" class="img-fluid rounded-start opacity-50 h-100 w-100" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </a>
-          </div>
+          </a>
+        </div>
     </main>
     <footer>
-      <div class="container text-center mt-2 mb-3">
+      <div class="container text-center mt-5 mb-4">
         <h5 class="text-light fs-5">|&nbsp;613-230-4586 |&nbsp;</h5>
         <h5 class="text-light fs-5">|&nbsp;info@turningpointmusic.ca |&nbsp;</h5>
         <h5 class="text-light fs-5">|&nbsp;The Turning Point &copy; 2023 |&nbsp;</h5>

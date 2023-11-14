@@ -19,6 +19,14 @@ a:link, a:visited, a:hover, a:active {
     padding: 10rem;
 }
 
+.buy-sell-trade {
+    background-image: url(./images/buy-sell-trade.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
 .records {
     background-image: url(./images/records.png);
     background-size: cover;
@@ -28,6 +36,13 @@ a:link, a:visited, a:hover, a:active {
 
 .cds {
     background-image: url(./images/cds.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+.dvds {
+    background-image: url(./images/dvds.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px;
@@ -73,6 +88,10 @@ a:link, a:visited, a:hover, a:active {
     .jumbotron {
         padding: 0rem;
     }
+
+    .buy-sell-trade {
+        padding: 0rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -81,6 +100,10 @@ a:link, a:visited, a:hover, a:active {
     }
 
     .jumbotron {
+        padding: 0rem;
+    }
+
+    .buy-sell-trade {
         padding: 0rem;
     }
 }
