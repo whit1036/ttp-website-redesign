@@ -28,7 +28,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .records-banner {
-    background-image: url(./images/record-product-banner.jpeg);
+    background-image: url(./images/records-product-banner-img.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px;
@@ -36,7 +36,15 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .cds-banner {
-    background-image: url(./images/cd-product-banner.jpeg);
+    background-image: url(./images/cd-product-banner-img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    /* padding: 10rem; */
+}
+
+.dvds-banner {
+    background-image: url(./images/dvd-product-banner-img.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px;
@@ -121,6 +129,10 @@ a:link, a:visited, a:hover, a:active {
         padding: 0rem;
     }
 
+    .dvds-banner {
+        padding: 0rem;
+    }
+
     .buy-sell-trade {
         padding: 0rem;
     }
@@ -148,6 +160,10 @@ a:link, a:visited, a:hover, a:active {
     }
 
     .cds-banner {
+        padding: 0rem;
+    }
+
+    .dvds-banner {
         padding: 0rem;
     }
 
