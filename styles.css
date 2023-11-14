@@ -27,6 +27,22 @@ a:link, a:visited, a:hover, a:active {
     padding: 10rem;
 }
 
+.records-banner {
+    background-image: url(./images/record-product-banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    /* padding: 10rem; */
+}
+
+.cds-banner {
+    background-image: url(./images/cd-product-banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    /* padding: 10rem; */
+}
+
 .products {
     background-image: url(./images/products.jpeg);
     background-size: cover;
@@ -56,7 +72,7 @@ a:link, a:visited, a:hover, a:active {
     background-position: 0px;
 }
 
-.nav-link {
+.nav-link, h6 {
     color: red;
     font-family: 'Unica One', sans-serif;
 }
@@ -97,6 +113,14 @@ a:link, a:visited, a:hover, a:active {
         padding: 0rem;
     }
 
+    .records-banner {
+        padding: 0rem;
+    }
+
+    .cds-banner {
+        padding: 0rem;
+    }
+
     .buy-sell-trade {
         padding: 0rem;
     }
@@ -116,6 +140,14 @@ a:link, a:visited, a:hover, a:active {
     }
 
     .buy-sell-trade {
+        padding: 0rem;
+    }
+
+    .records-banner {
+        padding: 0rem;
+    }
+
+    .cds-banner {
         padding: 0rem;
     }
 
