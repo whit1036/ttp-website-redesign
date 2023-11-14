@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Turning Point</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Unica+One&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Desktop Navigation -->
+        <div id="desktop-nav" class="container">
+          <a href="index.html"><img class="img-fluid mt-3 w-100" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
+            <nav class="navbar navbar-expand-lg mt-4">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link hvr-nav fs-2 mx-3" href="products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hvr-nav fs-2 mx-3" href="buy-sell-trade.html">Buy/Sell/Trade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hvr-nav fs-2 mx-3" href="new-arrivals.html">New Arrivals</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hvr-nav fs-2 mx-3" href="contact-us.html">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </nav>
+          </div>
+          <!-- Mobile Navigation -->
+          <div id="mobile-nav" class="container">
+            <nav class="navbar">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
+                <div class="mbl-nav-icon">
+                  <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+          </div>
+    </header>
+    <main role="main"> 
+        <div class="container">
+          <!-- Content Starts Here -->
+          <!-- Jumbotron (Products) -->
+          <div class="mb-4 mt-3 bg-light rounded-3 products">
+            <div class="container-fluid py-5">
+              <h1 class="col-md-12 display-4 fw-bold text-light text-center">Products</h1>
+            </div>
+          </div>
+          
+        </div>
+    </main>
+    <footer>
+      <div class="container text-center mt-5 mb-4">
+        <h5 class="text-light fs-5">|&nbsp;613-230-4586 |&nbsp;</h5>
+        <h5 class="text-light fs-5">|&nbsp;info@turningpointmusic.ca |&nbsp;</h5>
+        <h5 class="text-light fs-5">|&nbsp;The Turning Point &copy; 2023 |&nbsp;</h5>
+        <h5 class="text-light fs-5">|&nbsp;All Rights Reserved |&nbsp;</h5>
+      </div>
+    </footer>
+    
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
