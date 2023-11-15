@@ -2,7 +2,7 @@ body {
     background-color: #030301;
 }
 
-h1, h2, h5, p {
+h1, h2, h4, h5, p {
     font-family: 'Inconsolata', monospace;
 }
 
@@ -53,6 +53,22 @@ a:link, a:visited, a:hover, a:active {
 
 .new-arrivals-banner {
     background-image: url(./images/new-arrivals-banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
+.contact-banner {
+    background-image: url(./images/contact-banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
+.store-hours-banner {
+    background-image: url(./images/store-hours-banner.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px;
@@ -173,6 +189,14 @@ a:link, a:visited, a:hover, a:active {
         padding: 0rem;
     }
 
+    .contact-banner {
+        padding: 0rem;
+    }
+
+    .store-hours-banner {
+        padding: 0rem;
+    }
+
     .cds-banner {
         padding: 0rem;
     }
@@ -216,6 +240,14 @@ a:link, a:visited, a:hover, a:active {
     }
 
     .new-arrivals-banner {
+        padding: 0rem;
+    }
+
+    .contact-banner {
+        padding: 0rem;
+    }
+
+    .store-hours-banner {
         padding: 0rem;
     }
 
