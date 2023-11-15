@@ -51,6 +51,14 @@ a:link, a:visited, a:hover, a:active {
     padding: 10rem;
 }
 
+.new-arrivals-banner {
+    background-image: url(./images/new-arrivals-banner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 10rem;
+}
+
 .records-banner {
     background-image: url(./images/records-product-banner-img.jpeg);
     background-size: cover;
@@ -161,6 +169,10 @@ a:link, a:visited, a:hover, a:active {
         padding: 0rem;
     }
 
+    .new-arrivals-banner {
+        padding: 0rem;
+    }
+
     .cds-banner {
         padding: 0rem;
     }
@@ -200,6 +212,10 @@ a:link, a:visited, a:hover, a:active {
     }
 
     .buy-sell-trade-banner-3 {
+        padding: 0rem;
+    }
+
+    .new-arrivals-banner {
         padding: 0rem;
     }
 
