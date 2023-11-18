@@ -11,6 +11,27 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
+/* creates hidden on page skip-links for accessibility users */
+.skip-links {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skip-links a {
+	position: absolute;
+	top: -6em;
+	background-color: black;
+	color: white;
+	padding: .5em 1em;
+	font-weight: bold;
+}
+
+.skip-links a:focus {
+	top: 0;
+}
+
 .jumbotron {
     background-image: url(./images/banner-ttp.jpeg);
     background-size: cover;
@@ -133,7 +154,7 @@ a:link, a:visited, a:hover, a:active {
     font-family: 'Unica One', sans-serif;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
     color: red;
 }
 
