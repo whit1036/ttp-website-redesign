@@ -27,67 +27,67 @@
     </ul>
 
     <header>
-        <!-- Desktop Navigation -->
-        <div id="desktop-nav" class="container">
-          <a href="index.html"><img class="img-fluid mt-3 w-75 mx-auto d-block" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
-            <nav id="nav" class="navbar navbar-expand-lg mt-4" role="navigation">
-              <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav" role="menu">
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="products.html">Products</a>
-                      </li>
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="buy-sell-trade.html">Buy/Sell/Trade</a>
-                      </li>
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="new-arrivals.html">New Arrivals</a>
-                      </li>
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="contact-us.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
+      <!-- Desktop Navigation -->
+      <div id="desktop-nav" class="container">
+        <a href="index.html"><img class="img-fluid mt-3 w-75 mx-auto d-block" src="./images/desktop-logo.png" alt="The Turning Point Logo" aria-label="Click to back to the homepage"></a>
+          <nav id="nav" class="navbar navbar-expand-lg mt-4" role="navigation">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                  <ul class="navbar-nav" role="menu">
+                    <li class="nav-item" role="menuitem" aria-label="Click to browse through our offered products">
+                      <a class="nav-link hvr-nav fs-2 mx-3" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item" role="menuitem" aria-label="Click to learn more about what we buy, sell, and trade">
+                      <a class="nav-link hvr-nav fs-2 mx-3" href="buy-sell-trade.html">Buy/Sell/Trade</a>
+                    </li>
+                    <li class="nav-item" role="menuitem" aria-label="Click to browse through our new arrivals">
+                      <a class="nav-link hvr-nav fs-2 mx-3" href="new-arrivals.html">New Arrivals</a>
+                    </li>
+                    <li class="nav-item" role="menuitem" aria-label="Click to find out about how to contact us and where we are located">
+                      <a class="nav-link hvr-nav fs-2 mx-3" href="contact-us.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Mobile Navigation -->
+        <div id="mobile-nav" class="container">
+          <nav class="navbar" role="navigation">
+              <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
+              <div class="mbl-nav-icon">
+                <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
               </div>
-            </nav>
-          </div>
-          <!-- Mobile Navigation -->
-          <div id="mobile-nav" class="container">
-            <nav class="navbar" role="navigation">
-                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/desktop-logo.png" alt="The Turning Point Logo" alt="The Turning Point Logo"></a>
-                <div class="mbl-nav-icon">
-                  <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header bg-black">
+                  <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">The Turning Point &copy; 2023</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                  <div class="offcanvas-header bg-black">
-                    <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">The Turning Point &copy; 2023</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body bg-black">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" role="menu">
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link fs-1" aria-current="page" href="./index.html">Home</a>
-                      </li>
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link fs-1" href="./products.html">Products</a>
-                      </li>
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link fs-1" href="./buy-sell-trade.html">Buy/Sell/Trade</a>
-                      </li>
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link fs-1" href="./new-arrivals.html">New Arrivals</a>
-                      </li>
-                      <li class="nav-item" role="menuitem">
-                        <a class="nav-link fs-1" href="./contact-us.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="offcanvas-body bg-black">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" role="menu">
+                    <li class="nav-item" role="menuitem" aria-label="Click to back to the homepage">
+                      <a class="nav-link fs-1" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item" role="menuitem" aria-label="Click to browse through our offered products">
+                      <a class="nav-link fs-1" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item" role="menuitem" aria-label="Click to learn more about what we buy, sell, and trade">
+                      <a class="nav-link fs-1" href="./buy-sell-trade.html">Buy/Sell/Trade</a>
+                    </li>
+                    <li class="nav-item" role="menuitem" aria-label="Click to browse through our new arrivals">
+                      <a class="nav-link fs-1" href="./new-arrivals.html">New Arrivals</a>
+                    </li>
+                    <li class="nav-item" role="menuitem" aria-label="Click to find out about how to contact us and where we are located">
+                      <a class="nav-link fs-1" href="./contact-us.html">Contact Us</a>
+                    </li>
+                  </ul>
                 </div>
-            </nav>
-          </div>
-    </header>
+              </div>
+          </nav>
+        </div>
+      </header>
     <main id="main" role="main"> 
         <div class="container" role="complementary">
           <!-- Content Starts Here -->
@@ -98,52 +98,54 @@
             </div>
           </div> -->
           <!-- Owner Bio -->
-          <article class="card bg-black mb-4 mt-3 rounded-3 border border-light" role="banner">
+          <div class="card bg-black mb-4 mt-3 rounded-3 border border-light" role="banner">
             <div class="row g-0">
               <div class="col-lg-4">
-                <img src="./images/nick-beaton.jpeg" class="img-fluid rounded-start" alt="...">
+                <img src="./images/nick-beaton.jpeg" class="img-fluid rounded-start" alt="A picture of Nick Beaton, the owner of The Turning Point">
               </div>
               <div class="col-lg-8">
-                <div class="card-body">
-                  <h1 class="card-title card-home display-5 owner">Nick Beaton | Owner/Operator</h1>
-                  <p class="card-text text-light fs-3">Father, sound engineer, musician, record shop owner and passionate music lover. Let's talk music!</p>
-                  <h2 class="card-text text-light fs-3"><span class="card-home display-6">&#9993;</span> info@turningpointmusic.ca</h2>
-                  <h2 class="card-text text-light fs-3"><span class="card-home display-6">&#9742;</span> 613-230-4586</h2>
-                  <h2 class="card-text text-light fs-3"><span class="card-home display-6">&#10146;</span> 411 Cooper Street</h2>
+                <div class="card-body" itemscope itemtype="https://schema.org/Person">
+                  <h1 class="card-title card-home display-5 owner" itemprop="name">Nick Beaton</h1>
+                  <h2 itemprop="jobTitle" class="card-text card-home display-5 owner">Owner/Operator</h2>
+                  <p itemprop="description" class="card-text text-light fs-3">Sound engineer, musician, record shop owner and passionate music lover. Let's talk music!</p>
+                  <h2 itemprop="email" class="card-text text-light fs-3"><span class="card-home display-6">&#9993;</span> info@turningpointmusic.ca</h2>
+                  <h2 itemprop="telephone" class="card-text text-light fs-3"><span class="card-home display-6">&#9742;</span> 613-230-4586</h2>
+                  <h2 itemprop="workLocation" class="card-text text-light fs-3"><span class="card-home display-6">&#10146;</span> 411 Cooper Street</h2>
                 </div>
               </div>
             </div>
-          </article>
+          </div>
 
           <!-- Jumbrotron (Store Hours) -->
           <section role="region" class="mb-4 mt-3 bg-light rounded-3 store-hours-banner border border-light">
-            <div class="container-fluid py-5">
+            <div class="container-fluid py-5" itemscope itemtype="https://schema.org/LocalBusiness">
               <h3 class="col-md-12 display-5 fw-bold text-light text-center hours">Store Hours</h3>
-                <h3 class="col-md-12 fs-2 text-light text-center mt-4 hours">Mon - Sat: 10:00am - 6:00pm</h3>
-                <h3 class="col-md-12 fs-2 text-light text-center hours">Sun: 1:00pm - 5:00pm</h3>
+                <h3 itemprop="openingHours" class="col-md-12 fs-2 text-light text-center mt-4 hours">Mon - Sat: 10:00am - 6:00pm</h3>
+                <h3 itemprop="openingHours" class="col-md-12 fs-2 text-light text-center hours">Sun: 1:00pm - 5:00pm</h3>
             </div>
           </section>
 
           <!-- Please Note -->
           <article role="region">
-            <p class="col-md-12 fs-5 text-light">PLEASE NOTE:  The Turning Point is open 7 days a week, including Sundays (1:00 – 5:00).  Beginning in September 2015, the store will only be selling on Sundays.  We will no longer be buying or trading on Sundays.  Customers are welcome to continue bringing in LPs, CDs, and Movies on Sundays, but our staff will not evaluate them until Monday, when we will contact you with an offer. </p>
+            <h4 class="col-md-12 display-5 mt-4 text-center card-home waiting">PLEASE NOTE:</h4>
+            <p class="col-md-12 fs-5 text-light">The Turning Point is open 7 days a week, including Sundays (1:00 – 5:00).  Beginning in September 2015, the store will only be selling on Sundays.  We will no longer be buying or trading on Sundays.  Customers are welcome to continue bringing in LPs, CDs, and Movies on Sundays, but our staff will not evaluate them until Monday, when we will contact you with an offer. </p>
           </article>
 
           <!-- Jumbrotron (Google Map) -->
-          <article role="region">
-            <h4 class="col-md-12 display-5 mt-4 text-center card-home waiting">We’re waiting to serve you!</h4>
+          <article role="region" itemscope itemtype="https://schema.org/LocalBusiness">
+            <h4 class="col-md-12 display-5 mt-5 text-center card-home waiting">We’re waiting to serve you!</h4>
             <p class="col-md-12 fs-4 text-light mt-2 text-center">The map below shows you where you can find us at The Turning Point movie and music store in Ottawa.</p>
-            <iframe class="rounded-3 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179712.37861485686!2d-76.0696179079566!3d45.26789119251698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05ace885a8c5%3A0xdf3e919729bbcb1b!2sTurning%20Point!5e0!3m2!1sen!2sca!4v1700087754866!5m2!1sen!2sca" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe itemprop="geo" class="rounded-3 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179712.37861485686!2d-76.0696179079566!3d45.26789119251698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05ace885a8c5%3A0xdf3e919729bbcb1b!2sTurning%20Point!5e0!3m2!1sen!2sca!4v1700087754866!5m2!1sen!2sca" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </article>
 
         </div>
     </main>
 
     <footer role="contentinfo">
-      <div class="container text-center mt-4 mb-4">
-        <h5 class="text-light fs-5">|&nbsp;613-230-4586 |&nbsp;</h5>
-        <h5 class="text-light fs-5">|&nbsp;info@turningpointmusic.ca |&nbsp;</h5>
-        <h5 class="text-light fs-5">|&nbsp;The Turning Point &copy; 2023 |&nbsp;</h5>
+      <div class="container text-center mt-4 mb-4" itemscope itemtype="https://schema.org/LocalBusiness">
+        <h5 itemprop="telephone" class="text-light fs-5">|&nbsp;613-230-4586 |&nbsp;</h5>
+        <h5 itemprop="email" class="text-light fs-5">|&nbsp;info@turningpointmusic.ca |&nbsp;</h5>
+        <h5 itemprop="name" class="text-light fs-5">|&nbsp;The Turning Point &copy; 2023 |&nbsp;</h5>
         <h5 class="text-light fs-5">|&nbsp;All Rights Reserved |&nbsp;</h5>
         <div class="mt-3">
           <a href="https://www.facebook.com/turningpointmusic" aria-label="Go to Facebook Page" target="_blank">

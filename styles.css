@@ -2,11 +2,11 @@ body {
     background-color: #010203;
 }
 
-h1, h2, h4, h5, p, a, .hours {
+h1, h2, h4, h5, p, a, .hours, .product-title {
     font-family: 'Inconsolata', monospace;
 }
 
-.owner, .waiting {
+.owner, .waiting, .product-description {
     font-family: 'Unica One', sans-serif;
 }
 
@@ -14,6 +14,7 @@ h1, h2, h4, h5, p, a, .hours {
     font-family: 'Inconsolata', monospace;
     color: #FFFFFF;
 }
+
 
 /* removes underline from all website links */
 a:link, a:visited, a:hover, a:active {

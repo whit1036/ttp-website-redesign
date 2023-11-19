@@ -6,6 +6,9 @@
     <title>Buy, Sell, Trade</title>
     <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.3 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
     <!-- Google Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,71 +18,78 @@
     <!-- Stylesheet Link -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <!-- Desktop Navigation -->
-        <div id="desktop-nav" class="container">
-          <a href="index.html"><img class="img-fluid mt-3 w-75 mx-auto d-block" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
-            <nav class="navbar navbar-expand-lg mt-4">
-              <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="products.html">Products</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="buy-sell-trade.html">Buy/Sell/Trade</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="new-arrivals.html">New Arrivals</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link hvr-nav fs-2 mx-3" href="contact-us.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
+<body id="top">
+
+  <!--creates hidden webpage skip links for accessibility users-->
+  <ul class="skip-links fs-5">
+    <li><a href="#nav">Skip to main nav</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+  </ul>
+
+  <header>
+    <!-- Desktop Navigation -->
+    <div id="desktop-nav" class="container">
+      <a href="index.html"><img class="img-fluid mt-3 w-75 mx-auto d-block" src="./images/desktop-logo.png" alt="The Turning Point Logo" aria-label="Click to back to the homepage"></a>
+        <nav id="nav" class="navbar navbar-expand-lg mt-4" role="navigation">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav" role="menu">
+                  <li class="nav-item" role="menuitem" aria-label="Click to browse through our offered products">
+                    <a class="nav-link hvr-nav fs-2 mx-3" href="products.html">Products</a>
+                  </li>
+                  <li class="nav-item" role="menuitem" aria-label="Click to learn more about what we buy, sell, and trade">
+                    <a class="nav-link hvr-nav fs-2 mx-3" href="buy-sell-trade.html">Buy/Sell/Trade</a>
+                  </li>
+                  <li class="nav-item" role="menuitem" aria-label="Click to browse through our new arrivals">
+                    <a class="nav-link hvr-nav fs-2 mx-3" href="new-arrivals.html">New Arrivals</a>
+                  </li>
+                  <li class="nav-item" role="menuitem" aria-label="Click to find out about how to contact us and where we are located">
+                    <a class="nav-link hvr-nav fs-2 mx-3" href="contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
               </div>
-            </nav>
           </div>
-          <!-- Mobile Navigation -->
-          <div id="mobile-nav" class="container">
-            <nav class="navbar">
-                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
-                <div class="mbl-nav-icon">
-                  <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                  <div class="offcanvas-header bg-black">
-                    <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">The Turning Point &copy; 2023</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body bg-black">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                      <li class="nav-item">
-                        <a class="nav-link fs-1" aria-current="page" href="./index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fs-1" href="./products.html">Products</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fs-1" href="./buy-sell-trade.html">Buy/Sell/Trade</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fs-1" href="./new-arrivals.html">New Arrivals</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link fs-1" href="./contact-us.html">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </nav>
-          </div>
+        </nav>
+      </div>
+      <!-- Mobile Navigation -->
+      <div id="mobile-nav" class="container">
+        <nav class="navbar" role="navigation">
+            <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/desktop-logo.png" alt="The Turning Point Logo"></a>
+            <div class="mbl-nav-icon">
+              <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header bg-black">
+                <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">The Turning Point &copy; 2023</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-black">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" role="menu">
+                  <li class="nav-item" role="menuitem" aria-label="Click to back to the homepage">
+                    <a class="nav-link fs-1" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item" role="menuitem" aria-label="Click to browse through our offered products">
+                    <a class="nav-link fs-1" href="./products.html">Products</a>
+                  </li>
+                  <li class="nav-item" role="menuitem" aria-label="Click to learn more about what we buy, sell, and trade">
+                    <a class="nav-link fs-1" href="./buy-sell-trade.html">Buy/Sell/Trade</a>
+                  </li>
+                  <li class="nav-item" role="menuitem" aria-label="Click to browse through our new arrivals">
+                    <a class="nav-link fs-1" href="./new-arrivals.html">New Arrivals</a>
+                  </li>
+                  <li class="nav-item" role="menuitem" aria-label="Click to find out about how to contact us and where we are located">
+                    <a class="nav-link fs-1" href="./contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      </div>
     </header>
-    <main role="main"> 
-        <div class="container">
+    <main role="main" id="main"> 
+        <div class="container" role="complementary">
           <!-- Content Starts Here -->
           <!-- Jumbotron (Buy, Sell, Trade) -->
           <!-- <div class="mb-4 mt-3 bg-light rounded-3 buy-sell-trade-banner">
@@ -87,63 +97,86 @@
               <h1 class="col-md-12 display-4 fw-bold text-light text-center">Buy, Sell, Trade</h1>
             </div>
           </div> -->
+          
           <!-- Jumbrotron 2 (Buy, Sell, Trade) -->
-          <div class="mb-4 mt-3 bg-light rounded-3 buy-sell-trade-banner-2">
+          <div role="img" aria-label="Image of various scattered records" class="mb-4 mt-3 bg-light rounded-3 buy-sell-trade-banner-2">
             <div class="container-fluid py-5">
-              <h2 class="col-md-12 display-6 fw-bold text-light text-center">Got too many CDs, and records?
-                Tired of watching the same old movies and TV series?</h2>
-                <p class="col-md-12 display-6 text-light text-center mt-4">Bring us your CDs, LPs, DVDs and Blu-Rays!</p>
+              <h1 class="col-md-12 display-6 fw-bold text-light text-center">Got too many CDs, and records?
+                Tired of watching the same old movies and TV series?</h1>
+                <h2 class="col-md-12 display-6 text-light text-center mt-4">Bring us your CDs, LPs, DVDs and Blu-Rays!</h2>
             </div>
           </div>
+
           <!-- What We Buy -->
-          <div class="">
+          <div role="list">
             <h3 class="col-md-12 display-4 fw-bold card-home text-center mt-5">What We Buy</h3>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> We carry almost every type of music. In CDs we have Classic Rock, Alternative Rock, Soul, Jazz, Blues, Folk, Country, Alt-Country, Metal, World, Celtic, Reggae, Male & Female Vocalists, Classical and Soundtracks.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> We carry almost every type of music. In CDs we have Classic Rock, Alternative Rock, Soul, Jazz, Blues, Folk, Country, Alt-Country, Metal, World, Celtic, Reggae, Male & Female Vocalists, Classical and Soundtracks.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-danger display-6">&#10005;</span>  We DO NOT BUY CDs in the following genres: HipHop, Big Band, New Country, Dance, Crooners, and Francais (some exceptions).</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-danger display-6">&#10005;</span>  We DO NOT BUY CDs in the following genres: HipHop, Big Band, New Country, Dance, Crooners, and Francais (some exceptions).</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> In DVDs and Blu-Rays, we buy movies that are popular, or unique.  We want quality films. We buy Dramas, Action, Horror, Sci-fi, Westerns, Comedies, Musicals, Concert films, Children’s films, Foreign Films, and Documentaries. We also buy TV series, with particular interest in older classics (Get Smart to the Sopranos), current favourites, and British BBC series.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> In DVDs and Blu-Rays, we buy movies that are popular, or unique.  We want quality films. We buy Dramas, Action, Horror, Sci-fi, Westerns, Comedies, Musicals, Concert films, Children’s films, Foreign Films, and Documentaries. We also buy TV series, with particular interest in older classics (Get Smart to the Sopranos), current favourites, and British BBC series.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> In LPs, we pay top price for classic rock & roll, jazz and blues.  Our primary focus is records released since the beginning of the rock & roll era (1955). We will consider all other genres of music except Classical LPs.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> In LPs, we pay top price for classic rock & roll, jazz and blues.  Our primary focus is records released since the beginning of the rock & roll era (1955). We will consider all other genres of music except Classical LPs.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> LPs  must be in very good condition with no skips, deep scratches, or warps.  Covers must be in good shape, and intact.  No records with mould.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> LPs  must be in very good condition with no skips, deep scratches, or warps.  Covers must be in good shape, and intact.  No records with mould.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> CDs  and DVDs  must be in very good condition with no significant marks on them.  They must include both front and back cover.  The condition of the case is not important because we put all discs in new cases.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> CDs  and DVDs  must be in very good condition with no significant marks on them.  They must include both front and back cover.  The condition of the case is not important because we put all discs in new cases.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> We reserve the right to turn down offers of products we are over-stocked in, consider out-of-date or unsellable.  The store can only display so many titles so our buying focus is on those most likely to sell.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> We reserve the right to turn down offers of products we are over-stocked in, consider out-of-date or unsellable.  The store can only display so many titles so our buying focus is on those most likely to sell.</p>
           </div>
+
           <!-- What We Sell -->
-          <div class="mt-5">
+          <div role="list" class="mt-5">
             <h3 class="col-md-12 display-4 fw-bold card-home text-center mb-4">What We Sell</h3>
-            <p class="fs-4 text-white">These are our guidelines as to what kind of an offer you can expect when you bring your CDs,  DVDs/Blu-Rays,  and LPs  to the Turning Point.</p>
+            <p role="listitem" class="fs-4 text-white">These are our guidelines as to what kind of an offer you can expect when you bring your CDs,  DVDs/Blu-Rays,  and LPs  to the Turning Point.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span>  CDs: We pay anywhere from $ 1.00 to $ 4.00 for individual CDs.  Double CDs  run $ 4.00 – $ 6.00.  A typical price for a strong title in good condition would be $ 3.00 – $ 4.00.  We pay less for CDs  that are common titles.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span>  CDs: We pay anywhere from $ 1.00 to $ 4.00 for individual CDs.  Double CDs  run $ 4.00 – $ 6.00.  A typical price for a strong title in good condition would be $ 3.00 – $ 4.00.  We pay less for CDs  that are common titles.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> DVDs: We pay $ 2.00 to $ 3.00 for most DVDs and Blu-Rays. TV Series  run from $ 5.00 to $ 12.00 depending on popularity. We pay TOP DOLLAR for strong and unusual films!! Criterion, foreign film classics, and out-of-print titles can fetch up to three times as much as a normal film.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> DVDs: We pay $ 2.00 to $ 3.00 for most DVDs and Blu-Rays. TV Series  run from $ 5.00 to $ 12.00 depending on popularity. We pay TOP DOLLAR for strong and unusual films!! Criterion, foreign film classics, and out-of-print titles can fetch up to three times as much as a normal film.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> LPs: We pay anywhere from $ 1.00 – $ 5.00 for LPs, depending on their rarity, and what we can sell them for. For “collectible” LPs  see below.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> LPs: We pay anywhere from $ 1.00 – $ 5.00 for LPs, depending on their rarity, and what we can sell them for. For “collectible” LPs  see below.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> Collectors Items: In the case of a truly collectible item, perhaps a rare CD Box set, or a rare LP, we pay more. Generally, for such items, we’ll pay 40-50% of what we’re going to sell it for. A highly prized LP  might sell for $60.00 and we would pay you $30.00 for it. The more we expect to sell it for, the higher percentage you receive (up to 50%).</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> Collectors Items: In the case of a truly collectible item, perhaps a rare CD Box set, or a rare LP, we pay more. Generally, for such items, we’ll pay 40-50% of what we’re going to sell it for. A highly prized LP  might sell for $60.00 and we would pay you $30.00 for it. The more we expect to sell it for, the higher percentage you receive (up to 50%).</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> We will always offer you the option of cash or trade value in store credit. Trade value is 25% more than cash. So if we offer you $ 100.00 cash for your CDs or LPs you have the option of receiving $ 125.00 in store credit.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> We will always offer you the option of cash or trade value in store credit. Trade value is 25% more than cash. So if we offer you $ 100.00 cash for your CDs or LPs you have the option of receiving $ 125.00 in store credit.</p>
             <hr class="text-light mt-4">
-            <p class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> You can spend it all at once on any products in the store or you can create a credit “tab” and spend it on your future visits. At any one time the Turning Point has hundreds of customers enjoying this option.</p>
+            <p role="listitem" class="fs-4 text-white"><span class="text-success display-6">&#10003;</span> You can spend it all at once on any products in the store or you can create a credit “tab” and spend it on your future visits. At any one time the Turning Point has hundreds of customers enjoying this option.</p>
           </div>
+
           <!-- Jumbotron 3 (Buy, Sell, Trade) -->
-          <div class="mt-5 bg-light rounded-3 buy-sell-trade-banner-3 border border-light">
+          <div role="img" aria-label="Image of a vinyl record spinning on a turntable" class="mt-5 bg-light rounded-3 buy-sell-trade-banner-3 border border-light">
             <div class="container-fluid py-5">
-              <h2 class="col-md-12 display-6 fw-bold text-light text-center">You can bring your collection of CDs, DVDs/Blu-Rays, and LPs into the store at any time. No appointment is needed.</h2>
+              <h4 class="col-md-12 display-6 fw-bold text-light text-center">You can bring your collection of CDs, DVDs/Blu-Rays, and LPs into the store at any time. No appointment is needed.</h4>
             </div>
           </div>
         </div>
     </main>
-    <footer>
-      <div class="container text-center mt-4 mb-4">
-        <h5 class="text-light fs-5">|&nbsp;613-230-4586 |&nbsp;</h5>
-        <h5 class="text-light fs-5">|&nbsp;info@turningpointmusic.ca |&nbsp;</h5>
-        <h5 class="text-light fs-5">|&nbsp;The Turning Point &copy; 2023 |&nbsp;</h5>
+    
+    <footer role="contentinfo">
+      <div class="container text-center mt-4 mb-4" itemscope itemtype="https://schema.org/LocalBusiness">
+        <h5 itemprop="telephone" class="text-light fs-5">|&nbsp;613-230-4586 |&nbsp;</h5>
+        <h5 itemprop="email" class="text-light fs-5">|&nbsp;info@turningpointmusic.ca |&nbsp;</h5>
+        <h5 itemprop="name" class="text-light fs-5">|&nbsp;The Turning Point &copy; 2023 |&nbsp;</h5>
         <h5 class="text-light fs-5">|&nbsp;All Rights Reserved |&nbsp;</h5>
+        <div class="mt-3">
+          <a href="https://www.facebook.com/turningpointmusic" aria-label="Go to Facebook Page" target="_blank">
+            <i class="bi bi-facebook text-light display-4 mx-3"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/turningpointottawa" aria-label="Go to Instagram Page" target="_blank">
+            <i class="bi bi-instagram text-light display-4 mx-3"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="https://twitter.com/turningpoint613" aria-label="Go to Twitter/X Page" target="_blank">
+            <i class="bi bi-twitter-x text-light display-4 mx-3"></i>
+            <span class="sr-only">Twitter/X</span>
+          </a>
+        </div>
+        <!--creates a back to top link, increases font size-->
+        <div class="mt-3">
+        <a href="#top" class="card-home fs-5" aria-label="Click to go back to the top of the page">Back to top</a>
+        </div>
       </div>
     </footer>
     
