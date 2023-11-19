@@ -2,8 +2,12 @@ body {
     background-color: #010203;
 }
 
-h1, h2, h4, h5, p, a {
+h1, h2, h4, h5, p, a, .hours {
     font-family: 'Inconsolata', monospace;
+}
+
+.owner, .waiting {
+    font-family: 'Unica One', sans-serif;
 }
 
 /* removes underline from all website links */
@@ -31,6 +35,15 @@ a:link, a:visited, a:hover, a:active {
 .skip-links a:focus {
 	top: 0;
 }
+
+.sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+ }
 
 .jumbotron {
     background-image: url(./images/banner-ttp.jpeg);
