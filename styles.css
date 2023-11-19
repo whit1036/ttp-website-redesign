@@ -10,6 +10,11 @@ h1, h2, h4, h5, p, a, .hours {
     font-family: 'Unica One', sans-serif;
 }
 
+.description {
+    font-family: 'Inconsolata', monospace;
+    color: #FFFFFF;
+}
+
 /* removes underline from all website links */
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
