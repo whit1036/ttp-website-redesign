@@ -1,5 +1,10 @@
+
+
 body {
     background-color: #010203;
+    max-width: 1080px; 
+	margin: 0 auto !important; 
+	float: none !important; 
 }
 
 h1, h2, h4, h5, p, a, .hours, .product-title {
